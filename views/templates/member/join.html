@@ -5,7 +5,12 @@
     <title>세미프로젝트</title>
     <link rel="stylesheet" href="/static/css/project.css">
     <style>
-
+        form { border: 1px solid blue; width: 350px; margin: 100px auto;  }
+        form label { display: inline-block; width: 120px; text-align: right;
+                    font-weight: bold}
+        form div {margin: 5px 0}
+        form input {padding: 5px;}
+        button{ margin-left: 7px ; padding: 5px}
     </style>
 
 </head>
@@ -23,7 +28,7 @@
         </nav>
         <main>
             <h2>회원가입</h2>
-            <form id="join" name="joinfrm" method="post">
+            <form name="joinfrm" method="post">
                 <div><label for="userid">아이디</label>
                      <input type="text" name="userid" id="userid"
                            minlength="6" maxlength="18" required> </div>
@@ -37,7 +42,7 @@
                     <input type="text" name="name" id="name" required> </div>
                 <div><label for="email">이메일</label>
                     <input type="email" name="email" id="email" required> </div>
-                   <div> <button type="submit" id="joinbtn">입력완료</button>
+                   <div><label></label><button type="submit" id="joinbtn">입력완료</button>
                     <button type="reset" id="rstbtn">다시입력</button> </div>
             </form>
         </main>
