@@ -5,7 +5,23 @@
     <title>세미프로젝트</title>
     <link rel="stylesheet" href="/static/css/project.css">
     <style>
+        table { width: 850px; margin: 10px auto;
+            border-collapse: collapse; table-layout: fixed}
+        th, td{border: 1px solid black; padding: 5px 8px ;
+                text-align: center; height: 30px}
+        td:nth-child(2){text-align: left; white-space: nowrap;
+                overflow: hidden ;text-overflow: ellipsis}
+        thead td {border: none ; }
+        thead td:first-child{text-align: left}
+        thead td:first-child{text-align: right}
 
+        .pagnation {width: 550px;margin: 0 auto}
+        div ul {list-style: none; padding:0; }
+        div ul li {display: inline ;padding: 0 15px}
+
+        select, input{ padding: 5px}
+        button{ padding: 3.5px 5px}
+        .cpg {color:red; font-size: 30px; font-weight: bold}
     </style>
 </head>
 <body>
@@ -22,7 +38,14 @@
         </nav>
         <main>
             <h2>게시판</h2>
-            <table cellpadding="5" >
+            <table >
+                <colgroup>
+                    <col style="width: 10%">
+                    <col>
+                    <col style="width: 15%">
+                    <col style="width: 15%">
+                    <col style="width: 10%">
+                </colgroup>
                 <thead>
                     <tr><td colspan="3"><select name="findtype" id="findtype">
                         <option value="title">제 목</option>
@@ -39,7 +62,7 @@
                 <tbody>
                     <tr><td>1</td><td><a href="/board/view?bid=1">시간은 금이라구, 친구!</a></td>
                     <td>siestageek</td><td>2024.7.30</td><td>123</td></tr>
-                    <tr><td>1</td><td>시간은 금이라구, 친구!</td>
+                    <tr><td>1</td><td>시간은 금이라구, 친구!시간은 금이라구, 친구!시간은 금이라구, 친구!시간은 금이라구, 친구!시간은 금이라구, 친구!시간은 금이라구, 친구!시간은 금이라구, 친구!시간은 금이라구, 친구!시간은 금이라구, 친구!시간은 금이라구, 친구!</td>
                         <td>siestageek</td><td>2024.07.30</td><td>123</td></tr>
                     <tr><td>1</td><td>시간은 금이라구, 친구!</td>
                         <td>siestageek</td><td>2024.07.30</td><td>123</td></tr>
@@ -77,9 +100,9 @@
                         <td>siestageek</td><td>2024.07.30</td><td>123</td></tr>
                 </tbody>
             </table>
-            <div>
+            <div class="pagnation">
             <ul><li>이전</li><li>1</li><li>2</li><li>3</li><li>4</li>
-                <li>5</li><li>6</li><li>7</li><li>8</li><li>9</li>
+                <li class="cpg">5</li><li>6</li><li>7</li><li>8</li><li>9</li>
                 <li>10</li><li>다음</li></ul>
             </div>
         </main>
