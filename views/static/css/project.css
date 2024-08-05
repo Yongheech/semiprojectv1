@@ -1,5 +1,4 @@
-#wrap{ width: 1080px; border: 1px solid red;
-    margin: 0 auto;}
+#wrap{ width: 1080px; margin: 0 auto;}
 
 nav ul { list-style: none; padding: 0}
 nav ul li {display: inline; padding: 0 75px}
