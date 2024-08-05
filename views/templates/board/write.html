@@ -5,7 +5,12 @@
     <title>세미프로젝트</title>
     <link rel="stylesheet" href="/static/css/project.css">
     <style>
-
+        form { width: 450px;margin: 50px auto;}
+        th  {width: 150px; }
+        tr  {height: 35px }
+        tr:nth-child(3) {vertical-align: top}
+        #listbtn {margin-left: 95px}
+        input, textarea, button{padding: 5px}
     </style>
 </head>
 <body>
@@ -23,7 +28,7 @@
         <main>
             <h2>글쓰기</h2>
             <form name="writefrm" method="post">
-            <table cellpadding="5">
+            <table>
                 <tr><th>제목</th><td><input type="text" name="title" id="title" required></td></tr>
                 <tr><th>작성자</th><td><input type="text" name="userid" id="userid" value="siestageek" readonly></td></tr>
                 <tr><th>본문</th><td><textarea name="contents" id="contents" rows="10" cols="45" required></textarea></td></tr>
